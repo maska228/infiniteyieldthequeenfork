@@ -2,7 +2,7 @@
 [![Discord](https://media.discordapp.net/attachments/338403017894395905/668536741942263808/Discord-Logo-Color.png)](https://discord.io/infiniteyield)
 The best command line script for roblox.
 
-Get it [here](https://github.com/EdgeIY/infiniteyield/wiki)
+Get it [here](https://github.com/maska228/infiniteyieldthequeenfork/wiki) ([original wiki link](https://github.com/EdgeIY/infiniteyield/wiki))
 
  - Currently 373 commands
  - Open Source
@@ -17,8 +17,9 @@ Get it [here](https://github.com/EdgeIY/infiniteyield/wiki)
 
 ## queen-fork team
 ### Developer: maska228
+###### ^^^ if you need my real roblox nickname just email me.
 ### Developer: xxxqsq
-###### ^^^(my alt where this was hosted before)
+###### ^^^rblx nickname of the gamer queen :heart:(also my alt both on here and rblx)
 
 ## Usage
 You can learn how to use all the features of this script in the wiki!
