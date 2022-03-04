@@ -12,7 +12,7 @@ if not game:IsLoaded() then
 	notLoaded:Destroy()
 end
 
-ver = '5.5'
+ver = '5.5qfork'
 
 Players = game:GetService("Players")
 
@@ -73,7 +73,7 @@ Select_5 = Instance.new("TextButton")
 ClickTP = Instance.new("TextLabel")
 Select_6 = Instance.new("TextButton")
 ClickDelete = Instance.new("TextLabel")
-Select_13 = Instance.new("TextButton") 
+Select_13 = Instance.new("TextButton")
 Xray = Instance.new("TextLabel")
 Select_10 = Instance.new("TextButton")
 Swim = Instance.new("TextLabel")
@@ -980,7 +980,7 @@ Select_13.Text = "Add"
 Select_13.TextColor3 = Color3.new(0, 0, 0)
 Select_13.ZIndex = 10
 table.insert(shade3,Select_13)
-table.insert(text2,Select_13) 
+table.insert(text2,Select_13)
 
 Xray.Name = "Xray"
 Xray.Parent = Toggles
@@ -3414,7 +3414,7 @@ function updateColors(color,ctype)
 		for i,v in pairs(text1) do
 			v.TextColor3 = color
 			if v:IsA("TextBox") then
-				v.PlaceholderColor3 = color	
+				v.PlaceholderColor3 = color
 			end
 		end
 		currentText1 = color
@@ -3536,7 +3536,7 @@ ColorsButton.MouseButton1Click:Connect(function()
 				local function colorStripInput()
 					local relativeY = mouse.Y - colorStrip.AbsolutePosition.Y
 
-					if relativeY < 0 then relativeY = 0 elseif relativeY > 199 then relativeY = 199 end	
+					if relativeY < 0 then relativeY = 0 elseif relativeY > 199 then relativeY = 199 end
 
 					val = (199 - relativeY)/199
 
@@ -3752,7 +3752,7 @@ ColorsButton.MouseButton1Click:Connect(function()
 						local newColor = Color3.new(red,green,blue)
 						hue,sat,val = Color3.toHSV(newColor)
 						updateColor()
-					end)	
+					end)
 
 					newColor.Parent = basicColorsFrame
 					column = column + 1
@@ -3925,7 +3925,7 @@ end)
 
 selectJoin.MouseButton1Down:Connect(function()
 	chat.Visible = false
-	join.Visible = true	
+	join.Visible = true
 	table.remove(shade3,table.find(shade3,selectJoin))
 	table.remove(shade2,table.find(shade2,selectChat))
 	table.insert(shade2,selectJoin)
@@ -4855,7 +4855,7 @@ function FindInTable(tbl,val)
 	if tbl == nil then return false end
 	for _,v in pairs(tbl) do
 		if v == val then return true end
-	end 
+	end
 	return false
 end
 
@@ -5053,7 +5053,7 @@ function execCmd(cmdStr,speaker,store)
 			end
 		end
 	end)
-end	
+end
 
 function addcmd(name,alias,func,plgn)
 	cmds[#cmds+1]=
@@ -5275,7 +5275,7 @@ SpecialPlayerCases = {
 		local returns = {}
 		local groupID = tonumber(args[1])
 		for _,plr in pairs(Players:GetPlayers()) do
-			if plr:IsInGroup(groupID) then  
+			if plr:IsInGroup(groupID) then
 				table.insert(returns,plr)
 			end
 		end
@@ -6293,7 +6293,7 @@ function LoadPlugin(val,startup)
 		end
 		addcmdtext('',val)
 		addcmdtext(string.upper('--'..plugin["PluginName"]),val,plugin["PluginDescription"])
-		for i,v in pairs(plugin["Commands"]) do 
+		for i,v in pairs(plugin["Commands"]) do
 			local cmdExt = ''
 			local cmdName = i
 			local function handleNames()
@@ -6370,7 +6370,7 @@ game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
 		if KeepInfYield == true then
 			local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport
 			if queueteleport then
-				queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()")
+				queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/maska228/infiniteyieldthequeenfork/master/source'))()")
 			end
 		end
 	end
@@ -6418,7 +6418,7 @@ addcmd('clraliases',{},function(args, speaker)
 end)
 
 addcmd('discord', {'support', 'help'}, function(args, speaker)
-	local http = game:GetService('HttpService') 
+	local http = game:GetService('HttpService')
 	if toClipboard then
 		toClipboard('https://discord.com/invite/dYHag43eeU')
 		notify('Discord Invite', 'Copied to clipboard!\ndiscord.gg/dYHag43eeU')
@@ -6738,10 +6738,10 @@ addcmd('serverinfo',{'info','sinfo'},function(args, speaker)
 		table.insert(text1,CopyPlcID)
 
 		local SINFOGUI = background
-		FRAME:TweenPosition(UDim2.new(0.5, -130, 0, 100), "InOut", "Quart", 0.5, true, nil) 
+		FRAME:TweenPosition(UDim2.new(0.5, -130, 0, 100), "InOut", "Quart", 0.5, true, nil)
 		wait(0.5)
 		Exit.MouseButton1Click:Connect(function()
-			FRAME:TweenPosition(UDim2.new(0.5, -130, 0, -500), "InOut", "Quart", 0.5, true, nil) 
+			FRAME:TweenPosition(UDim2.new(0.5, -130, 0, -500), "InOut", "Quart", 0.5, true, nil)
 			wait(0.6)
 			FRAME:Destroy()
 			canOpenServerinfo = true
@@ -6846,7 +6846,7 @@ end)
 
 addcmd('joinplayer',{'joinp'},function(args, speaker)
 	local retries = 0
-	function ToServer(User,PlaceId)	
+	function ToServer(User,PlaceId)
 		if args[2] == nil then PlaceId = game.PlaceId end
 		if not pcall(function()
 				local FoundUser, UserId = pcall(function()
@@ -6901,7 +6901,7 @@ addcmd('joinplayer',{'joinp'},function(args, speaker)
 end)
 
 addcmd('exit',{},function(args, speaker)
-	game:shutdown() 
+	game:shutdown()
 end)
 
 local Noclipping = nil
@@ -7001,7 +7001,7 @@ function sFLY(vfly)
 			CONTROL.B = - (vfly and vehicleflyspeed or iyflyspeed)
 		elseif KEY:lower() == 'a' then
 			CONTROL.L = - (vfly and vehicleflyspeed or iyflyspeed)
-		elseif KEY:lower() == 'd' then 
+		elseif KEY:lower() == 'd' then
 			CONTROL.R = (vfly and vehicleflyspeed or iyflyspeed)
 		elseif QEfly and KEY:lower() == 'e' then
 			CONTROL.Q = (vfly and vehicleflyspeed or iyflyspeed)*2
@@ -7111,7 +7111,7 @@ addcmd('cframefly', {'cfly'}, function(args, ME)
 		local Human = ME.Character and ME.Character:FindFirstChildWhichIsA('Humanoid')
 		local HRP = Human and Human.RootPart or ME.Character.PrimaryPart
 		if not ME.Character or not Human or not HRP or not Camera then
-			return 
+			return
 		end
 		-- local Cache = {}
 		-- local Cons = {game.ItemChanged, Human.StateChanged, Human.Changed, ME.Character.Changed}
@@ -7207,7 +7207,7 @@ addcmd('float', {'platform'},function(args, speaker)
 					eDown:Disconnect()
 					floatDied:Disconnect()
 				end
-			end			
+			end
 			FloatingFunc = game:GetService('RunService').Heartbeat:Connect(FloatPadLoop)
 		end)
 	end
@@ -7308,7 +7308,7 @@ addcmd('setwaypoint',{'swp','setwp','spos','saveposition','savepos'},function(ar
 		if AllWaypoints ~= nil then
 			AllWaypoints[#AllWaypoints + 1] = {NAME = WPName, COORD = {math.floor(torso.Position.X), math.floor(torso.Position.Y), math.floor(torso.Position.Z)}, GAME = game.PlaceId}
 		end
-	end	
+	end
 	refreshwaypoints()
 	updatesaves()
 end)
@@ -7321,7 +7321,7 @@ addcmd('waypointpos',{'wpp','setwaypointposition','setpos','setwaypoint','setway
 		if AllWaypoints ~= nil then
 			AllWaypoints[#AllWaypoints + 1] = {NAME = WPName, COORD = {args[2], args[3], args[4]}, GAME = game.PlaceId}
 		end
-	end	
+	end
 	refreshwaypoints()
 	updatesaves()
 end)
@@ -8405,7 +8405,7 @@ addcmd('unlockws',{'unlockworkspace'},function(args, speaker)
 	end
 end)
 
-addcmd('lockws',{'lockworkspace'},function(args, speaker) 
+addcmd('lockws',{'lockworkspace'},function(args, speaker)
 	for i,v in pairs(workspace:GetDescendants()) do
 		if v:IsA("BasePart") then
 			v.Locked = true
@@ -8794,7 +8794,7 @@ addcmd('loopbring',{},function(args, speaker)
 								getRoot(pchar).CFrame = getRoot(speaker.Character).CFrame + Vector3.new(distance,1,0)
 							end
 							wait(lDelay)
-						else 
+						else
 							for a,b in pairs(bringT) do if b == plrName then table.remove(bringT, a) end end
 						end
 					end
@@ -8849,16 +8849,16 @@ addcmd('pathfindwalkto',{'pathfindfollow'},function(args, speaker)
 				local success, response = pcall(function()
 					path:ComputeAsync(getRoot(speaker.Character).Position, getRoot(Players[v].Character).Position)
 					local waypoints = path:GetWaypoints()
-					local distance 
+					local distance
 					for waypointIndex, waypoint in pairs(waypoints) do
 						local waypointPosition = waypoint.Position
 						hum:MoveTo(waypointPosition)
-						repeat 
+						repeat
 							distance = (waypointPosition - hum.Parent.PrimaryPart.Position).magnitude
 							wait()
 						until
 						distance <= 5
-					end	 
+					end
 				end)
 				if not success then
 					speaker.Character:FindFirstChildOfClass('Humanoid'):MoveTo(getRoot(Players[v].Character).Position)
@@ -8888,11 +8888,11 @@ addcmd('pathfindwalktowaypoint',{'pathfindwalktowp'},function(args, speaker)
 					local success, response = pcall(function()
 						path:ComputeAsync(getRoot(speaker.Character).Position, TrueCoords)
 						local waypoints = path:GetWaypoints()
-						local distance 
+						local distance
 						for waypointIndex, waypoint in pairs(waypoints) do
 							local waypointPosition = waypoint.Position
 							hum:MoveTo(waypointPosition)
-							repeat 
+							repeat
 								distance = (waypointPosition - hum.Parent.PrimaryPart.Position).magnitude
 								wait()
 							until
@@ -8917,11 +8917,11 @@ addcmd('pathfindwalktowaypoint',{'pathfindwalktowp'},function(args, speaker)
 					local success, response = pcall(function()
 						path:ComputeAsync(getRoot(speaker.Character).Position, TrueCoords)
 						local waypoints = path:GetWaypoints()
-						local distance 
+						local distance
 						for waypointIndex, waypoint in pairs(waypoints) do
 							local waypointPosition = waypoint.Position
 							hum:MoveTo(waypointPosition)
-							repeat 
+							repeat
 								distance = (waypointPosition - hum.Parent.PrimaryPart.Position).magnitude
 								wait()
 							until
@@ -9587,7 +9587,7 @@ addcmd('team',{},function(args, speaker)
 		local L_name = b.Name:lower()
 		local F = L_name:find(getstring(1))
 		if F == 1 then
-			teamname = b 
+			teamname = b
 		end
 	end
 	speaker.Team = teamname
@@ -9770,7 +9770,7 @@ end)
 
 addcmd('offset',{},function(args, speaker)
 	if #args < 3 then
-		return 
+		return
 	end
 	if speaker.Character then
 		speaker.Character:TranslateBy(Vector3.new(tonumber(args[1]) or 0, tonumber(args[2]) or 0, tonumber(args[3]) or 0))
@@ -10499,11 +10499,11 @@ end)
 
 simRadius = false
 addcmd('simulationradius',{'simradius'},function(args, speaker)
-	if sethidden then		
+	if sethidden then
 		simRadLoop = game:GetService('RunService').Stepped:Connect(function()
 			if setsimulation then
 				setsimulation(1e308, 1/0)
-			else	
+			else
 				sethidden(speaker,"MaximumSimulationRadius",1/0)
 				sethidden(speaker,"SimulationRadius", 1e308)
 			end
@@ -10515,12 +10515,12 @@ addcmd('simulationradius',{'simradius'},function(args, speaker)
 end)
 
 addcmd('nosimulationradius',{'nosimradius','unsimradius'},function(args, speaker)
-	if sethidden then		
+	if sethidden then
 		if simRadLoop then simRadLoop:Disconnect() end
 		wait()
 		if setsimulation then
 			setsimulation(139,139)
-		else	
+		else
 			sethidden(speaker,"MaximumSimulationRadius",139)
 			sethidden(speaker,"SimulationRadius", 139)
 		end
@@ -11116,7 +11116,7 @@ end)
 
 addcmd('joinlogs',{'jlogs'},function(args, speaker)
 	chat.Visible = false
-	join.Visible = true	
+	join.Visible = true
 	table.remove(shade3,table.find(shade3,selectJoin))
 	table.remove(shade2,table.find(shade2,selectChat))
 	table.insert(shade2,selectJoin)
@@ -12151,7 +12151,7 @@ end
 IYMouse.Move:Connect(checkTT)
 
 task.spawn(function()
-	if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/version'))() end) then
+	if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/maska228/infiniteyieldthequeenfork/master/version'))() end) then
 		if ver ~= Version then
 			notify('Outdated','Get the new version at infinite.yiff.gg')
 		end
@@ -12347,7 +12347,7 @@ end
 IYMouse.Move:Connect(checkTT)
 
 spawn(function()
-	if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/version'))() end) then
+	if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/maska228/infiniteyieldthequeenfork/master/version'))() end) then
 		if ver ~= Version then
 			notify('Outdated','Get the new version at infyield.yolasite.com')
 		end
