@@ -12041,11 +12041,12 @@ addcmd('removecmd',{'deletecmd'},function(args, speaker)
 end)
 
 addcmd('togglenotifs',{nonotifications},function(args,speaker)
-	if Notification == Instance.new("Frame") then
-		Notification = ""
-	else
+	if Notifenabled == false then
 		Notification = Instance.new("Frame")
-		notify('Notifs enabled','Pray to god that this works')
+		Notifenabled = true
+	else
+		Notification = ""
+		Notifenabled = false
 	end
 end)
 
