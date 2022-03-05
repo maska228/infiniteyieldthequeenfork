@@ -15,7 +15,7 @@ Get it [here](https://github.com/maska228/infiniteyieldthequeenfork/wiki) ([orig
 ### Developer: Zwolf
 ### Developer: Toon
 
-## queen-fork team
+## qfork team
 ### Developer: maska228
 ###### ^^^ if you need my real roblox nickname just email me.
 ### Developer: xxxqsq
