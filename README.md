@@ -19,7 +19,7 @@ Get it [here](https://github.com/maska228/infiniteyieldthequeenfork/wiki) ([orig
 ### Developer: maska228
 ###### ^^^ if you need my real roblox nickname just email me.
 ### Developer: xxxqsq
-###### ^^^rblx nickname of the gamer queen :heart:(also my alt both on here and rblx)
+###### ^^^rblx nickname of the gamer queen :heart:(also my alt both on here and rblx).
 
 ## Usage
 You can learn how to use all the features of this script in the wiki!
