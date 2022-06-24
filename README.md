@@ -19,9 +19,8 @@ Get it [here](https://github.com/maska228/infiniteyieldthequeenfork/wiki) ([orig
 ### Developer: maska228
 ###### ^^^ if you need my real roblox nickname just email me.
 ### Developer: xxxqsq
-###### ^^^rblx nickname of the gamer queen :heart:(also my alt both on here and rblx).
-### It could be you! 
-###### actually prob not. if i do trust you, it could be. i dont actually know any good lua devs, let alone client-only exploit script devs
+###### ^^^rblx nickname of the gamer queen :heart:(also my alt on rblx). <!-- just an alt, thought you'd wanna know abt it if reporting me.
+                                                                              it is kinda dumb to add alt nicknames like that, but idc tbh.-->
 
 ## Usage
 You can learn how to use all the features of this script in the wiki!
